@@ -1,4 +1,4 @@
-![GitHub Views](https://img.shields.io/github/views/ARidwanW/arw-dotnet-project)
+![GitHub watchers](https://img.shields.io/github/watchers/ARidwanW/arw-dotnet-project?label=Views) ![GitHub forks](https://img.shields.io/github/forks/ARidwanW/arw-dotnet-project)
 
 
 # Project Overview
