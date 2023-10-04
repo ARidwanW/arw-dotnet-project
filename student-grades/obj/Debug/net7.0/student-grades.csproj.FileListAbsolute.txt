@@ -1,0 +1,14 @@
+C:\My_Learning\DotNET\arw-dotnet-project\student-grades\bin\Debug\net7.0\student-grades.exe
+C:\My_Learning\DotNET\arw-dotnet-project\student-grades\bin\Debug\net7.0\student-grades.deps.json
+C:\My_Learning\DotNET\arw-dotnet-project\student-grades\bin\Debug\net7.0\student-grades.runtimeconfig.json
+C:\My_Learning\DotNET\arw-dotnet-project\student-grades\bin\Debug\net7.0\student-grades.dll
+C:\My_Learning\DotNET\arw-dotnet-project\student-grades\bin\Debug\net7.0\student-grades.pdb
+C:\My_Learning\DotNET\arw-dotnet-project\student-grades\obj\Debug\net7.0\student-grades.GeneratedMSBuildEditorConfig.editorconfig
+C:\My_Learning\DotNET\arw-dotnet-project\student-grades\obj\Debug\net7.0\student-grades.AssemblyInfoInputs.cache
+C:\My_Learning\DotNET\arw-dotnet-project\student-grades\obj\Debug\net7.0\student-grades.AssemblyInfo.cs
+C:\My_Learning\DotNET\arw-dotnet-project\student-grades\obj\Debug\net7.0\student-grades.csproj.CoreCompileInputs.cache
+C:\My_Learning\DotNET\arw-dotnet-project\student-grades\obj\Debug\net7.0\student-grades.dll
+C:\My_Learning\DotNET\arw-dotnet-project\student-grades\obj\Debug\net7.0\refint\student-grades.dll
+C:\My_Learning\DotNET\arw-dotnet-project\student-grades\obj\Debug\net7.0\student-grades.pdb
+C:\My_Learning\DotNET\arw-dotnet-project\student-grades\obj\Debug\net7.0\student-grades.genruntimeconfig.cache
+C:\My_Learning\DotNET\arw-dotnet-project\student-grades\obj\Debug\net7.0\ref\student-grades.dll

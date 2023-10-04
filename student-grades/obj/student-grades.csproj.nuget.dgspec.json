@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\My_Learning\\DotNET\\arw-dotnet-project\\student-grades\\student-grades.csproj": {}
+    "C:\\My_Learning\\DotNET\\arw-dotnet-project\\student-grades\\student-grades.csproj": {}
   },
   "projects": {
-    "c:\\My_Learning\\DotNET\\arw-dotnet-project\\student-grades\\student-grades.csproj": {
+    "C:\\My_Learning\\DotNET\\arw-dotnet-project\\student-grades\\student-grades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\My_Learning\\DotNET\\arw-dotnet-project\\student-grades\\student-grades.csproj",
+        "projectUniqueName": "C:\\My_Learning\\DotNET\\arw-dotnet-project\\student-grades\\student-grades.csproj",
         "projectName": "student-grades",
-        "projectPath": "c:\\My_Learning\\DotNET\\arw-dotnet-project\\student-grades\\student-grades.csproj",
+        "projectPath": "C:\\My_Learning\\DotNET\\arw-dotnet-project\\student-grades\\student-grades.csproj",
         "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "c:\\My_Learning\\DotNET\\arw-dotnet-project\\student-grades\\obj\\",
+        "outputPath": "C:\\My_Learning\\DotNET\\arw-dotnet-project\\student-grades\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config"

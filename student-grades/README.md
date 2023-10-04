@@ -30,6 +30,14 @@ Nicolas | 83.6  B
 Zahirah | 83.4  B
 Jeong | 95.4  A
 
+Scores | Grade
+--- | ---
+97 - 100 | A+
+93 - 96 | A
+90 - 92 | A-
+87 - 89 | B+
+83 - 86 | B
+
 ## Setup
 ```
 // initialize variables - graded assignments 
