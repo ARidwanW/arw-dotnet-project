@@ -20,14 +20,15 @@ This is simple project to develop an Student Grading application. This project g
 
 Student: Sophia Johnson
 
-|Course | Grade | Credit Hours |
-| --- | :---: | :---: |
-|English 101 | 4 | 3 |
-|Algebra 101 | 3 | 3 |
-|Biology 101 | 3 | 4 |
-|Computer Science I | 3 | 4 |
-|Psychology 101 | 4 | 3 |
+|Course | Grade | Credit Hours | Multiply |
+| --- | :---: | :---: | --- |
+|English 101 | 4 (A) | 3 | 12 |
+|Algebra 101 | 3 (B) | 3 | 9 |
+|Biology 101 | 3 (B) | 4 | 12 |
+|Computer Science I | 3 (B) | 4 | 12 |
+|Psychology 101 | 4 (A) | 3 | 12 |
 |
+|Sum | | 17 | 57
 |Final GPA: | 3.35 |
 
 ## Setup
