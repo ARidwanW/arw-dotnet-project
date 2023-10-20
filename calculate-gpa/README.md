@@ -20,7 +20,7 @@ This is simple project to develop an Student Grading application. This project g
 
 Student: Sophia Johnson
 
-|Course | Grade | Credit Hours | Multiply |
+|Course | Grade | Credit Hours | Grade Point |
 | --- | :---: | :---: | --- |
 |English 101 | 4 (A) | 3 | 12 |
 |Algebra 101 | 3 (B) | 3 | 9 |
