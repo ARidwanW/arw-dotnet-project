@@ -1,6 +1,6 @@
 # Calculate Final GPA
 
-This is simple project to develop an Student Grading application. This project guided from [Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/guided-project-calculate-final-gpa/)
+This is simple project to calculate final GPA by breaking down the work into smaller parts and Apply formatting techniques to display output . This project guided from [Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/guided-project-calculate-final-gpa/)
 
 ## Project Overview
 
