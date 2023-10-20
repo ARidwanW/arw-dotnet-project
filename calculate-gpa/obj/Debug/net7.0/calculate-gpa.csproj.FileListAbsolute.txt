@@ -1,0 +1,14 @@
+C:\My_Learning\DotNET\arw-dotnet-project\calculate-gpa\obj\Debug\net7.0\calculate-gpa.GeneratedMSBuildEditorConfig.editorconfig
+C:\My_Learning\DotNET\arw-dotnet-project\calculate-gpa\obj\Debug\net7.0\calculate-gpa.AssemblyInfoInputs.cache
+C:\My_Learning\DotNET\arw-dotnet-project\calculate-gpa\obj\Debug\net7.0\calculate-gpa.AssemblyInfo.cs
+C:\My_Learning\DotNET\arw-dotnet-project\calculate-gpa\obj\Debug\net7.0\calculate-gpa.csproj.CoreCompileInputs.cache
+C:\My_Learning\DotNET\arw-dotnet-project\calculate-gpa\bin\Debug\net7.0\calculate-gpa.exe
+C:\My_Learning\DotNET\arw-dotnet-project\calculate-gpa\bin\Debug\net7.0\calculate-gpa.deps.json
+C:\My_Learning\DotNET\arw-dotnet-project\calculate-gpa\bin\Debug\net7.0\calculate-gpa.runtimeconfig.json
+C:\My_Learning\DotNET\arw-dotnet-project\calculate-gpa\bin\Debug\net7.0\calculate-gpa.dll
+C:\My_Learning\DotNET\arw-dotnet-project\calculate-gpa\bin\Debug\net7.0\calculate-gpa.pdb
+C:\My_Learning\DotNET\arw-dotnet-project\calculate-gpa\obj\Debug\net7.0\calculate-gpa.dll
+C:\My_Learning\DotNET\arw-dotnet-project\calculate-gpa\obj\Debug\net7.0\refint\calculate-gpa.dll
+C:\My_Learning\DotNET\arw-dotnet-project\calculate-gpa\obj\Debug\net7.0\calculate-gpa.pdb
+C:\My_Learning\DotNET\arw-dotnet-project\calculate-gpa\obj\Debug\net7.0\calculate-gpa.genruntimeconfig.cache
+C:\My_Learning\DotNET\arw-dotnet-project\calculate-gpa\obj\Debug\net7.0\ref\calculate-gpa.dll
