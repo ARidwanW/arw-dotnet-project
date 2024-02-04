@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using WebAPI.Domain;
 using WebAPI.Domain.Map;
@@ -37,5 +38,10 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+var services = app.Services.CreateScope().ServiceProvider;
+var db = services.GetRequiredService<MyDatabase>();
+var userManager = services.GetRequiredService<UserManager<AppUser>>();
+var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
+await UserSeed.Seed(db, userManager, roleManager);
 
 app.Run();
