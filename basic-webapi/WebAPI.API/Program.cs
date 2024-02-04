@@ -17,6 +17,8 @@ builder.Services.AddIdentityCore<AppUser>(opt =>
     opt.Password.RequireNonAlphanumeric = false;
 })
 .AddRoles<IdentityRole>()
+.AddTokenProvider<DataProtectorTokenProvider<AppUser>>("ProviderName")
+.AddDefaultTokenProviders()
 .AddEntityFrameworkStores<MyDatabase>();    //* package: Microsoft.AspNetCore.Identity.EntityFrameworkCore
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
