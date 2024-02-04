@@ -1,6 +1,9 @@
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebAPI.Domain;
+using WebAPI.Domain.DTOs.Request;
+using WebAPI.Domain.DTOs.Response;
 using WebAPI.Persistence;
 
 namespace WebAPI.API.Controllers;
@@ -8,20 +11,23 @@ namespace WebAPI.API.Controllers;
 public class CategoryController : BaseApiController
 {
     private readonly MyDatabase _myDatabase;
-    public CategoryController(MyDatabase myDatabase)
+    private readonly IMapper _map;
+    public CategoryController(MyDatabase myDatabase, IMapper mapper)
     {
         _myDatabase = myDatabase;
+        _map = mapper;
     }
     #region Action
     [HttpGet]   //* api/category
     public async Task<IActionResult> GetCategories()
     {
-        var category = await _myDatabase.Categories.ToListAsync();
-        if(category is null)
+        var categories = await _myDatabase.Categories.ToListAsync();
+        if(categories is null)
         {
             return NotFound();
         }
-        return Ok(category);
+        List<CategoryResponse> response = _map.Map<List<CategoryResponse>>(categories);
+        return Ok(response);
     }
     [HttpGet("{id}")]   //* api/category/{id}
     public async Task<IActionResult> GetCategory([FromRoute]Guid id)
@@ -31,18 +37,35 @@ public class CategoryController : BaseApiController
         {
             return NotFound();
         }
-        return Ok(category);
+        CategoryResponse response = _map.Map<CategoryResponse>(category);
+        return Ok(response);
     }
+    // [HttpPost]
+    // public async Task<IActionResult> CreateCategory([FromBody]Category category)
+    // {
+    //     _myDatabase.Categories.Add(category);
+    //     await _myDatabase.SaveChangesAsync();
+    //     return Ok(category);
+    // }
     [HttpPost]
-    public async Task<IActionResult> CreateCategory([FromBody]Category category)
+    public async Task<IActionResult> CreateCategory([FromBody]CategoryRequest request)
     {
+        Category category = _map.Map<Category>(request);
         _myDatabase.Categories.Add(category);
         await _myDatabase.SaveChangesAsync();
         return Ok(category);
     }
+    // [HttpPut]
+    // public async Task<IActionResult> UpdateCategory([FromBody]Category category)
+    // {
+    //     _myDatabase.Categories.Update(category);
+    //     await _myDatabase.SaveChangesAsync();
+    //     return Ok(category);
+    // }
     [HttpPut]
-    public async Task<IActionResult> UpdateCategory([FromBody]Category category)
+    public async Task<IActionResult> UpdateCategory([FromBody]CategoryRequest request)
     {
+        Category category = _map.Map<Category>(request);
         _myDatabase.Categories.Update(category);
         await _myDatabase.SaveChangesAsync();
         return Ok(category);
