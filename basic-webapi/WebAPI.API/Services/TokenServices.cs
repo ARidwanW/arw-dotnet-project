@@ -14,7 +14,7 @@ public class TokenServices
     {
         _configuration = configuration;
     }
-    public string CreateToken(AppUser user)
+    public string CreateToken(AppUser user, IEnumerable<string> roles)
     {
         var claims = new List<Claim>()
         {
@@ -22,6 +22,10 @@ public class TokenServices
             new Claim(ClaimTypes.NameIdentifier, user.Id),
             new Claim(ClaimTypes.Email, user.Email)
         };
+        foreach(var role in roles)
+        {
+            claims.Add(new Claim(ClaimTypes.Role, role));
+        }
         // SymmetricSecurityKey key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes
         // ("ThisIsSup3r53cR3TThisIsSup3r53cR3TThisIsSup3r53cR3TThisIsSup3r53cR3T"));
         // //* At least 12 characters to secret key
