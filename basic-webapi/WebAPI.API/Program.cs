@@ -13,6 +13,7 @@ builder.Services.AddIdentityCore<AppUser>(opt =>
 {
     opt.Password.RequireNonAlphanumeric = false;
 })
+.AddRoles<IdentityRole>()
 .AddEntityFrameworkStores<MyDatabase>();    //* package: Microsoft.AspNetCore.Identity.EntityFrameworkCore
 builder.Services.AddAuthentication();
 
