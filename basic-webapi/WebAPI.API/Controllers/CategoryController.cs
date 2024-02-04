@@ -63,12 +63,20 @@ public class CategoryController : BaseApiController
     //     return Ok(category);
     // }
     [HttpPut]
-    public async Task<IActionResult> UpdateCategory([FromBody]CategoryRequest request)
+    [Route("{id}")]
+    public async Task<IActionResult> UpdateCategory([FromRoute]Guid id, [FromBody]CategoryRequest request)
     {
-        Category category = _map.Map<Category>(request);
+        Category? category = await _myDatabase.Categories.FindAsync(id);
+        if(category is null)
+        {
+            return NotFound();
+        }
+        category.CategoryName = request.CategoryName;
+        category.Description = request.Description;
+        CategoryResponse response = _map.Map<CategoryResponse>(category);
         _myDatabase.Categories.Update(category);
         await _myDatabase.SaveChangesAsync();
-        return Ok(category);
+        return Ok(response);
     }
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteCategory([FromRoute]Guid id)
