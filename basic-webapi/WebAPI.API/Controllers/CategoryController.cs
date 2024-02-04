@@ -1,4 +1,5 @@
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebAPI.Domain;
@@ -29,6 +30,7 @@ public class CategoryController : BaseApiController
         List<CategoryResponse> response = _map.Map<List<CategoryResponse>>(categories);
         return Ok(response);
     }
+    [Authorize(Roles = "Admin")]
     [HttpGet("{id}")]   //* api/category/{id}
     public async Task<IActionResult> GetCategory([FromRoute]Guid id)
     {
