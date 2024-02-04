@@ -1,10 +1,18 @@
 using Microsoft.EntityFrameworkCore;
+using WebAPI.Domain;
 using WebAPI.Domain.Map;
 using WebAPI.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+builder.Services.AddIdentityCore<AppUser>(opt =>
+{
+    opt.Password.RequireNonAlphanumeric = false;
+})
+.AddEntityFrameworkStores<MyDatabase>();    //* package: Microsoft.AspNetCore.Identity.EntityFrameworkCore
+builder.Services.AddAuthentication();
 
 builder.Services.AddControllers();
 builder.Services.AddAutoMapper(typeof(MapperProfile));  //* package: AutoMapper.Extensions.Microsoft.DependencyInjection

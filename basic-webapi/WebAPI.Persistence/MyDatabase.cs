@@ -1,9 +1,10 @@
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using WebAPI.Domain;
 
 namespace WebAPI.Persistence;
 
-public class MyDatabase : DbContext
+public class MyDatabase : IdentityDbContext<AppUser>    //* microsoft.aspnetcore.identity.entityframeworkcore
 {
     public MyDatabase()
     { }
