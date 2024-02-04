@@ -20,7 +20,7 @@ public class MyDatabase : DbContext
             cat.HasKey(c => c.CategoryId);
             cat.Property(c => c.CategoryName).IsRequired(true);
             cat.Property(c => c.Description).IsRequired(false);
-            cat.HasMany(c => c.Products).WithOne(p => p.Category);
+            cat.HasMany(c => c.Products).WithOne(p => p.Category).HasForeignKey(p => p.CategoryId);
         });
         modelBuilder.Entity<Product>(prod =>
         {
